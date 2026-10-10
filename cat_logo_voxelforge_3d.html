@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxelForge 3D - Catálogo Oficial</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            accent: '#00F0FF', // Ciano Neon
+                            purple: '#7928CA',
+                            emerald: '#10B981',
+                        }
+                    },
+                    fontFamily: {
+                        mono: ['Fira Code', 'monospace', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .neon-border {
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+        }
+        .neon-border:hover {
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+        }
+        .glow-text {
+            text-shadow: 0 0 12px rgba(0, 240, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans min-h-screen pb-12">
+
+    <!-- Header / Bio para Instagram -->
+    <header class="max-w-2xl mx-auto pt-8 px-4 text-center">
+        <div class="relative inline-block mb-4">
+            <div class="w-24 h-24 rounded-2xl bg-gradient-to-tr from-brand-accent to-brand-purple p-1 mx-auto neon-border">
+                <div class="w-full h-full bg-brand-card rounded-xl flex items-center justify-center overflow-hidden">
+                    <i class="fa-solid fa-cube text-4xl text-brand-accent"></i>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-3xl font-extrabold tracking-wider glow-text uppercase font-mono">VoxelForge 3D</h1>
+        <p class="text-slate-400 text-sm mt-2 max-w-md mx-auto">
+            Catálogo exclusivo de colecionáveis e artigos em impressão 3D. Escolha sua coleção e faça seu pedido direto pelo WhatsApp!
+        </p>
+
+        <!-- Redes Sociais e Botão Principal -->
+        <div class="flex justify-center gap-4 mt-6">
+            <a href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20fazer%20um%20orçamento." target="_blank" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Fazer Pedido Personalizado
+            </a>
+            <a href="#" target="_blank" class="p-2.5 bg-slate-800 hover:bg-slate-700 rounded-xl text-slate-300 transition" title="Instagram">
+                <i class="fa-brands fa-instagram text-xl"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Título do Catálogo -->
+    <div class="max-w-4xl mx-auto px-4 mt-10 mb-6 border-b border-slate-800 pb-4">
+        <h2 class="text-xl font-bold font-mono text-brand-accent flex items-center gap-2">
+            <i class="fa-solid fa-layer-group"></i> Coleções Disponíveis
+        </h2>
+    </div>
+
+    <!-- Grid de Produtos -->
+    <main class="max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Coleção Dino -->
+        <div class="bg-brand-card border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:border-brand-accent/50 neon-border flex flex-col justify-between">
+            <div>
+                <div class="h-52 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                    <!-- Substituir o src pela URL da foto do Dino -->
+                    <img src="https://via.placeholder.com/400x300?text=Cole%C3%A7%C3%A3o+Dino" alt="Coleção Dino" class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 bg-brand-dark/90 backdrop-blur-md text-brand-accent text-xs font-bold px-2.5 py-1 rounded-full border border-brand-accent/30">
+                        Impressão 3D
+                    </span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-white font-mono">Coleção Dino</h3>
+                    <p class="text-slate-400 text-sm mt-2">Peças colecionáveis com acabamento detalhado. Disponível por unidade ou kit promocional.</p>
+                    
+                    <div class="mt-5 space-y-2 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-slate-400">Unidade:</span>
+                            <span class="font-bold text-white">R$ 24,90</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm border-t border-slate-800 pt-2">
+                            <span class="text-brand-accent font-medium">Kit (4 cores):</span>
+                            <span class="font-black text-brand-accent text-base">R$ 89,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20pedir%20itens%20da%20Coleção%20Dino." target="_blank" class="w-full bg-slate-800 hover:bg-brand-accent hover:text-slate-950 text-brand-accent py-2.5 rounded-xl text-sm font-bold border border-brand-accent/30 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Comprar Dino
+                </a>
+            </div>
+        </div>
+
+        <!-- Coleção Cubo -->
+        <div class="bg-brand-card border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:border-brand-accent/50 neon-border flex flex-col justify-between">
+            <div>
+                <div class="h-52 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                    <!-- Substituir o src pela URL da foto do Cubo -->
+                    <img src="https://via.placeholder.com/400x300?text=Cole%C3%A7%C3%A3o+Cubo" alt="Coleção Cubo" class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 bg-brand-dark/90 backdrop-blur-md text-brand-accent text-xs font-bold px-2.5 py-1 rounded-full border border-brand-accent/30">
+                        Design Geométrico
+                    </span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-white font-mono">Coleção Cubo</h3>
+                    <p class="text-slate-400 text-sm mt-2">Design moderno e modular. Perfeito para decoração ou colecionadores do universo Voxel.</p>
+                    
+                    <div class="mt-5 space-y-2 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-slate-400">Unidade:</span>
+                            <span class="font-bold text-white">R$ 29,90</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm border-t border-slate-800 pt-2">
+                            <span class="text-brand-accent font-medium">Kit (4 cores):</span>
+                            <span class="font-black text-brand-accent text-base">R$ 109,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20pedir%20itens%20da%20Coleção%20Cubo." target="_blank" class="w-full bg-slate-800 hover:bg-brand-accent hover:text-slate-950 text-brand-accent py-2.5 rounded-xl text-sm font-bold border border-brand-accent/30 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Comprar Cubo
+                </a>
+            </div>
+        </div>
+
+        <!-- Coleção Aqua -->
+        <div class="bg-brand-card border border-slate-800 rounded-2xl overflow-hidden transition-all duration-300 hover:border-brand-accent/50 neon-border flex flex-col justify-between">
+            <div>
+                <div class="h-52 bg-slate-800 relative overflow-hidden flex items-center justify-center">
+                    <!-- Substituir o src pela URL da foto do Aqua -->
+                    <img src="https://via.placeholder.com/400x300?text=Cole%C3%A7%C3%A3o+Aqua" alt="Coleção Aqua" class="w-full h-full object-cover">
+                    <span class="absolute top-3 right-3 bg-brand-dark/90 backdrop-blur-md text-brand-accent text-xs font-bold px-2.5 py-1 rounded-full border border-brand-accent/30">
+                        Lançamento
+                    </span>
+                </div>
+                <div class="p-5">
+                    <h3 class="text-2xl font-bold text-white font-mono">Coleção Aqua</h3>
+                    <p class="text-slate-400 text-sm mt-2">Formatos fluidos e orgânicos impressos com alta precisão e cores vibrantes.</p>
+                    
+                    <div class="mt-5 space-y-2 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-slate-400">Unidade:</span>
+                            <span class="font-bold text-white">R$ 29,90</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm border-t border-slate-800 pt-2">
+                            <span class="text-brand-accent font-medium">Kit (4 cores):</span>
+                            <span class="font-black text-brand-accent text-base">R$ 109,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20pedir%20itens%20da%20Coleção%20Aqua." target="_blank" class="w-full bg-slate-800 hover:bg-brand-accent hover:text-slate-950 text-brand-accent py-2.5 rounded-xl text-sm font-bold border border-brand-accent/30 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Comprar Aqua
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 text-center text-slate-500 text-xs">
+        <p>© 2026 VoxelForge 3D - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
